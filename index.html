@@ -7,6 +7,7 @@
     <title>Sportif</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 <body>
     <nav>
@@ -14,7 +15,7 @@
             <div class="nav">
                 <div class="nav__logo">
                     <a href="#">
-                        <img class="logo" src="./img/logo.svg" alt="Sprtif">
+                        <img class="logo" src="./img/logo.png" alt="Sprtif">
                     </a>
                 </div>
                 <div class="nav__navigation">
@@ -26,12 +27,7 @@
                         <li class="nav__item"><a href="#">sale</a></li>
                     </ul>
                     <div class="nav__search">
-                        <div class="search">
-                            <div class="search__data">
-                                <span class="search__lens"></span>
-                                <input type="text" class="search__input" id="main__search" placeholder="search entire store here">
-                            </div>
-                        </div> 
+                        <input class="search" type="text" id="main__search" placeholder="search entire store here">
                     </div>
                 </div>
             </div>
@@ -39,24 +35,125 @@
     </nav>
     <section class="header">
         <div class="container">
-            <div class="header__wrapper">
-                <div class="header__text">
-                    <h1 class="header__title">
+            <div class="flex__wrapper">
+                <div class="header__text text-column">
+                    <h1 class="title text-column__title">
                         BEST SELLING<br>STRETCH SHORTS
                     </h1>
-                    <p class="header__description">Get the perfect fit with 6 different inseam lengths.</p>
-                    <div class="header__btn">
+                    <p class="text-column__description">Get the perfect fit with 6 different inseam lengths.</p>
+                    <div class="text-column__btn">
                         <div class="btn">
                             SHOP ALL SHORTS
                         </div>
                     </div>
                 </div>
-                <div class="header__pic">
-                    <div class="header__img">
+                <div class="header__pic picture-in-rect">
+                    <div class="picture-in-rect__img">
                         <img src="./img/header.png" alt="styly man">
                     </div>
-                    <div class="header__rect header__rect_red"></div>
-                    <div class="header__rect header__rect_white"></div>
+                    <div class="picture-in-rect__rect picture-in-rect__rect_up picture-in-rect__rect_red"></div>
+                    <div class="picture-in-rect__rect picture-in-rect__rect_down"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sale">
+        <div class="container">
+            <h4 class="sale__subtitle subtitle">
+                TGIF, INLET, AND MARCHAL'S COLLECTIONS
+            </h4>
+            <h3 class="sale__title title">
+                NOW 40% OFF!
+            </h3>
+            <ul class="sale__products">
+                <li class="sale__product product-card">
+                    <img src="./img/products/image1.png" alt="shorts" class="product-card__img">
+                    <div class="product-card__title-place">
+                        <h5 class="product-card__title subtitle">
+                            Marchal's Original Cargo Short
+                        </h5>
+                    </div> 
+                    <ul class="product-card__rating">
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                    </ul>
+                    <p class="product-card__text">As low as <span class="product-card__price">$40.99</span></p>
+                    <div class="product-card__btn">ADD TO CART</div>
+                </li>
+                <li class="sale__product product-card">
+                    <img src="./img/products/image2.png" alt="shorts" class="product-card__img">
+                    <div class="product-card__title-place">
+                        <h5 class="product-card__title subtitle">Inlet Original Short</h5>
+                    </div>
+                    <ul class="product-card__rating">
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                    </ul>
+                    <p class="product-card__text">As low as <span class="product-card__price">$38.99</span></p>
+                    <div class="product-card__btn">ADD TO CART</div>
+                </li>
+                <li class="sale__product product-card">
+                    <img src="./img/products/image3.png" alt="shorts" class="product-card__img">
+                    <div class="product-card__title-place">
+                        <h5 class="product-card__title subtitle">TGIF Pant</h5>
+                    </div>
+                    <ul class="product-card__rating">
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star product-card__star-void"></li>
+                    </ul>
+                    <p class="product-card__text">As low as <span class="product-card__price">$40.99</span></p>
+                    <div class="product-card__btn">ADD TO CART</div>
+                </li>
+                <li class="sale__product product-card">
+                    <img src="./img/products/image4.png" alt="shorts" class="product-card__img">
+                    <div class="product-card__title-place">
+                        <h5 class="product-card__title subtitle">Inlet Original Pant</h5>
+                    </div>
+                    <ul class="product-card__rating">
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star"></li>
+                        <li class="product-card__star product-card__star-void"></li>
+                        <li class="product-card__star product-card__star-void"></li>
+                    </ul>
+                    <p class="product-card__text">As low as <span class="product-card__price">$52.99</span></p>
+                    <div class="product-card__btn">ADD TO CART</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="bestseller">
+        <div class="container">
+            <div class="flex__wrapper">
+                <div class="bestseller__pic picture-in-rect">
+                    <div class="picture-in-rect__img bestseller__img">
+                        <img src="./img/best-pants.png" alt="best selling pants">
+                    </div>
+                    <div class="picture-in-rect__rect picture-in-rect__rect_up"></div>
+                    <div class="picture-in-rect__rect picture-in-rect__rect_down"></div>
+                </div>
+                <div class="bestseller__text text-column">
+                    <h1 class="title text-column__title">
+                        OUR BESTSELLING PANTS
+                    </h1>
+                    <p class="text-column__description">
+                        Our classic cargo pants are built to last and designed to exceed your expectations! 
+                        From Frequent Traveler to Hatteras to Trinidad, we have the perfect fit for you!
+                    </p>
+                    <div class="text-column__btn">
+                        <div class="btn">
+                            SHOP ALL SHORTS
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

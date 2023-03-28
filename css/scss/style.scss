@@ -9,13 +9,20 @@ body{
     line-height: 3.3rem;
     font-family: 'Open Sans';
     color:#000000;
-    overflow: hidden;
     margin:0;
 }
 a{
     text-decoration: none;
 }
+li{
+    list-style: none;
+}
+ul, p{
+    padding:0;
+    margin:0;
+}
 .container{
+    max-width: 132rem;
     margin: 0 auto;
     width: 90%;
 }
@@ -31,41 +38,42 @@ a{
     cursor: pointer;
     transition: background-color .3s ease-in-out;
 }
-
 .btn:hover{
     background-color: #00000014;
 }
+.subtitle {
+    font-family: 'Oswald';
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 3.6rem;
+    color:#001F3D;
+    margin:0;
+}
+.title {
+    font-family: 'Oswald';
+    font-size: 6.5rem;
+    font-weight: 700;
+    line-height: 9.6rem;
+    color:#001F3D;
+    margin:0;
+}
 
-.header {
-    margin: 7rem 0 9rem;
-    height:62rem;
-
-    &__wrapper{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__text {
+.text-column{
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
 
     &__title {
-        font-family: 'Oswald';
-        font-size: 6.5rem;
-        font-weight: 700;
-        line-height: 9.6rem;
-        margin: 0;
+        margin:0;
     }
 
     &__description {
         margin: 1rem 0 3rem;
     }
+}
 
-    &__pic {
-        position: relative;
-    }
+.picture-in-rect {
+    position: relative;
 
     &__img {
         position: relative;
@@ -74,24 +82,129 @@ a{
     }
 
     &__rect {
-
         position: absolute;
         width: 51.7rem;
         height: 46.5rem;
         z-index:0;
+        border: 1px solid #A04955;
 
-        &_red {
-            z-index: 1;
+        &_up {
             right: 0;
             top: 0;
-            background: #A04955;
         }
 
-        &_white {
+        &_down {
             right: 13.9rem;
             top: 15.6rem;
-            z-index: 0;
-            border: 1px solid #A04955;
         }
+
+        &_red {
+            background: #A04955;
+        }
+    }
+}
+
+.flex__wrapper{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header {
+    margin: 7rem 0 9rem;
+    height:62rem;
+}
+
+.sale {
+    background-color: #F1F1F1;
+    color:#333333;
+    text-align: center;
+    font-weight: 500;
+    padding: 8rem 0;
+
+		&__subtitle {
+            color:#333333;
+        }
+
+		&__title {
+            color:#333333;
+        }
+
+		&__products {
+            margin-top: 2.3rem;
+            display:flex;
+            justify-content: space-between;
+        }
+
+		&__product {
+            background-color: white;
+            padding: 3.2rem;
+        }
+}
+.product-card {
+    font-family: 'Oswald';
+    font-size: 1.8rem;
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+
+		&__title {
+            font-size: 2.4rem;
+        }
+
+        &__title-place{
+            flex: 1 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+		&__rating {
+            display: flex;
+            justify-content: center;
+        }
+
+		&__star {
+            width:2.4rem;
+            height: 2.4rem;
+            margin: .5rem .35rem;
+            background-image: url('../../img/star.svg');
+            background-repeat: no-repeat;
+        }
+
+		&__star-void {
+            background-image: url('../../img/grey-star.svg');
+        }
+
+		&__text {
+            font-weight: 200;
+        }
+
+		&__price {
+            font-weight: 500;
+        }
+
+		&__btn {
+            margin-top:1.5rem;
+            background-image: url('../../img/shopping-bag.png');
+            background-repeat: no-repeat;
+            background-position: .7rem 1rem;
+            padding: .4rem .8rem .4rem 3.3rem;
+            font-weight: normal;
+            background-color: #A04955;
+            color: #fff;
+            cursor: pointer;
+        }
+}
+
+.bestseller {
+    padding: 9rem 0;
+
+    &__img{
+        margin:-1.2rem 0;
+    }
+
+    &__text{
+        margin-left: 6rem;
     }
 }
