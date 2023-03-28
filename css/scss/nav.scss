@@ -1,0 +1,63 @@
+
+.nav {
+    font-family: 'Oswald';
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin:3.3rem 0;
+
+    &__navigation{
+        display: flex;
+    }
+
+    &__menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+    }
+
+    &__item{
+        margin-right:1.1rem;
+        font-size:2rem;
+        line-height: 3rem;
+        & a{
+            color: #333333;
+            display: inline-block;
+            padding: 1.7rem;
+        }
+    }
+
+    &__search {
+        display: flex;
+    }
+}
+.search {
+    border:1px solid #A04955;
+    border-radius: 2rem;
+    height: 4rem;
+    font-size:1.8rem;
+    line-height: 2.2rem;
+    margin:1.2rem 0 1.2rem 1.7rem;
+
+    &__data{
+        margin: .9rem 4rem .6rem 3.8rem;
+        display: flex;
+        
+        & input{
+            text-transform: uppercase;
+            font-family: 'Oswald';
+            font-weight: 400;
+            border:none;
+            width:15.7rem;
+        }
+    }
+
+    &__lens {
+        display: inline-block;            
+        background: url('../img/lens.svg') no-repeat;
+        width: 2.4rem;
+        height: 2.45rem;
+        margin-right: 1.1rem;
+    }
+}

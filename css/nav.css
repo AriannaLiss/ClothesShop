@@ -1,0 +1,56 @@
+.nav {
+  font-family: "Oswald";
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin: 3.3rem 0;
+}
+.nav__navigation {
+  display: flex;
+}
+.nav__menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.nav__item {
+  margin-right: 1.1rem;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.nav__item a {
+  color: #333333;
+  display: inline-block;
+  padding: 1.7rem;
+}
+.nav__search {
+  display: flex;
+}
+
+.search {
+  border: 1px solid #A04955;
+  border-radius: 2rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin: 1.2rem 0 1.2rem 1.7rem;
+}
+.search__data {
+  margin: 0.9rem 4rem 0.6rem 3.8rem;
+  display: flex;
+}
+.search__data input {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-weight: 400;
+  border: none;
+  width: 15.7rem;
+}
+.search__lens {
+  display: inline-block;
+  background: url("../img/lens.svg") no-repeat;
+  width: 2.4rem;
+  height: 2.45rem;
+  margin-right: 1.1rem;
+}

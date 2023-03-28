@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@200;400;500;600;700&display=swap");
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 3.3rem;
+  font-family: "Open Sans";
+  color: #000000;
+  overflow: hidden;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.btn {
+  text-align: center;
+  border: 1px solid #000000;
+  vertical-align: middle;
+  height: 5rem;
+  width: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.0784313725);
+}
+
+.header {
+  margin: 7rem 0 9rem;
+  height: 62rem;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__title {
+  font-family: "Oswald";
+  font-size: 6.5rem;
+  font-weight: 700;
+  line-height: 9.6rem;
+  margin: 0;
+}
+.header__description {
+  margin: 1rem 0 3rem;
+}
+.header__pic {
+  position: relative;
+}
+.header__img {
+  position: relative;
+  margin: 3.5rem -1.1rem;
+  z-index: 10;
+}
+.header__rect {
+  position: absolute;
+  width: 51.7rem;
+  height: 46.5rem;
+  z-index: 0;
+}
+.header__rect_red {
+  z-index: 1;
+  right: 0;
+  top: 0;
+  background: #A04955;
+}
+.header__rect_white {
+  right: 13.9rem;
+  top: 15.6rem;
+  z-index: 0;
+  border: 1px solid #A04955;
+}
