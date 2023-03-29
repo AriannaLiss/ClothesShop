@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@200;400;500;600;700&display=swap');
+$gray-bg: #F1F1F1;
+$red: #A04955;
+$cont-small-width: 86%;
 
 html{
     font-size: 10px;
@@ -25,13 +28,19 @@ ul, p{
     max-width: 132rem;
     margin: 0 auto;
     width: 90%;
+
+    &_small{
+        width:$cont-small-width;
+        margin: 0 auto;
+    }
 }
-.btn {
+.btn, .btn-red {
     text-align: center;
     border: 1px solid #000000;
     vertical-align: middle;
     height: 5rem;
-    width: 24rem;
+    width: fit-content;
+    padding: 0px 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,6 +49,11 @@ ul, p{
 }
 .btn:hover{
     background-color: #00000014;
+}    
+.btn-red{
+    color: #fff;
+    background-color: $red;
+    border: none;
 }
 .subtitle {
     font-family: 'Oswald';
@@ -86,7 +100,7 @@ ul, p{
         width: 51.7rem;
         height: 46.5rem;
         z-index:0;
-        border: 1px solid #A04955;
+        border: 1px solid $red;
 
         &_up {
             right: 0;
@@ -99,15 +113,18 @@ ul, p{
         }
 
         &_red {
-            background: #A04955;
+            background: $red;
         }
     }
 }
 
-.flex__wrapper{
+.columns{
     display: flex;
     justify-content: space-between;
 
+    &_last{
+        margin-left: 6rem;
+    }
 }
 
 .header {
@@ -116,7 +133,7 @@ ul, p{
 }
 
 .sale {
-    background-color: #F1F1F1;
+    background-color: $gray-bg;
     color:#333333;
     text-align: center;
     font-weight: 500;
@@ -141,12 +158,14 @@ ul, p{
             padding: 3.2rem;
         }
 }
+
 .product-card {
     font-family: 'Oswald';
     font-size: 1.8rem;
     width: 17%;
     display: flex;
     flex-direction: column;
+    align-items: center;;
 
 		&__title {
             font-size: 2.4rem;
@@ -186,14 +205,15 @@ ul, p{
 
 		&__btn {
             margin-top:1.5rem;
-            background-image: url('../../img/shopping-bag.png');
+            background-image: url('../../img/shopping-bag.svg');
             background-repeat: no-repeat;
-            background-position: .7rem 1rem;
+            background-position: .9rem .8rem;
             padding: .4rem .8rem .4rem 3.3rem;
-            font-weight: normal;
-            background-color: #A04955;
+            font-weight: 400;
+            background-color: $red;
             color: #fff;
             cursor: pointer;
+            width: fit-content;
         }
 }
 
@@ -203,8 +223,120 @@ ul, p{
     &__img{
         margin:-1.2rem 0;
     }
+}
 
-    &__text{
-        margin-left: 6rem;
+.sale2 {
+    background-color: $gray-bg;
+    padding: 9rem 0;
+
+    &__card {
+        width: 48%;
     }
 }
+
+.category-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__img {
+        position: relative;
+        display: flex;
+        cursor: pointer;
+        & img{
+            width:100%;
+        }
+    }
+
+    &__title {
+        height: 8.6rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        background-color: $red;
+        opacity: .8;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        margin: 3.5rem 0 2.5rem;
+    }
+
+    &__btn {
+        width: 36.6rem;
+    }
+}
+
+.article {
+    background-image: url('../../img/rectangle.png');
+    background-size: 100%;
+    
+    & *{
+        color: #fff;
+    }
+
+    &__column {
+        width:48%;
+        padding: 2.2rem 0 4rem;
+    }
+
+    & .text-column__description {
+        width: 90%;
+    }
+}
+
+.sale3 {
+    margin: 9rem 0;
+
+    &__bg {
+        background-color: $red;
+        height: 34rem;
+        padding-top: 3rem;
+        position: relative;
+    }
+    
+    &__title {
+        color:white;
+        text-align: center;
+    }
+
+    &__products {
+        position: absolute;
+        bottom: -50%;
+        width: $cont-small-width;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__product {
+        background-color: #fff;
+        width: 27.5%;
+        border: 1px solid $red;
+        padding: 2.7rem 0 3.8rem;
+
+        & img{
+            flex: 1 0 auto;
+            margin-bottom: 1rem;
+        }
+
+        & .btn-red{
+            font-family: 'Open sans';
+            margin-top: 1.5rem;
+            width:22rem;
+            height: 4rem;
+            padding: 0 1rem;
+        }
+    }
+}
+.product-card {
+
+    &__img {}
+
+    &__title {}
+}
+
