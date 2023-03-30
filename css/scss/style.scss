@@ -40,6 +40,7 @@ ul, p{
     vertical-align: middle;
     height: 5rem;
     width: fit-content;
+    min-width: 24rem;
     padding: 0px 3rem;
     display: flex;
     justify-content: center;
@@ -54,6 +55,20 @@ ul, p{
     color: #fff;
     background-color: $red;
     border: none;
+}
+.up-btn{
+    width:8.3rem;
+    height:8.3rem;
+    background-color: #A04955;
+    border-radius: 50%;
+    background-image: url('../../img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position:fixed;
+    right: 5rem;
+    bottom: 3.5rem;
+    display: block;
+    z-index: 99;
 }
 .subtitle {
     font-family: 'Oswald';
@@ -76,6 +91,7 @@ ul, p{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        z-index: 3;
 
     &__title {
         margin:0;
@@ -128,7 +144,8 @@ ul, p{
 }
 
 .header {
-    margin: 7rem 0 9rem;
+    margin-top: 6rem;
+    padding: 8.7rem 0 9rem;
     height:62rem;
 }
 
@@ -274,7 +291,8 @@ ul, p{
 
 .article {
     background-image: url('../../img/rectangle.png');
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     
     & *{
         color: #fff;
@@ -291,7 +309,7 @@ ul, p{
 }
 
 .sale3 {
-    margin: 9rem 0;
+    padding: 9rem 0;
 
     &__bg {
         background-color: $red;
@@ -315,12 +333,13 @@ ul, p{
 
     &__product {
         background-color: #fff;
-        width: 27.5%;
+        width: 25%;
         border: 1px solid $red;
-        padding: 2.7rem 0 3.8rem;
+        padding: 2.7rem 1.7rem 3.8rem;
+        overflow: hidden;
 
         & img{
-            flex: 1 0 auto;
+            flex: 1 1 auto;
             margin-bottom: 1rem;
         }
 
@@ -333,10 +352,96 @@ ul, p{
         }
     }
 }
-.product-card {
 
-    &__img {}
+.about {
 
-    &__title {}
+    &__bg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f3f3f3;
+        margin: 41.4rem 5.3rem 4.6rem;
+        padding: 13rem 4rem 4rem;
+        position: relative;
+    }
+
+    &__mark {
+        position: absolute;
+        top: -15.5rem;
+    }
+
+    &__description {
+        padding: 2rem 0 3.5rem;
+    }
 }
 
+.footer {
+    background-color: $red;
+
+    &__columns {
+        color:#fff;
+        font-family: 'Oswald';
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    &__column {
+        margin: 2.2rem;
+    }
+    
+    &__column:hover {
+        text-shadow: 0 4px 4px #00000040;
+    }
+
+    &__column:first-child {
+        margin-left: 0;
+    }
+
+    &__column:last-child {
+        margin-right: 0;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    &__item{
+        color: #fff;
+        display: block;
+    }
+
+    &__form {
+        background-color: #fff;
+        padding:.9rem;
+        display: flex;
+        justify-content: space-between;
+        margin:1rem 0;
+
+        & input{
+            font-family: 'Oswald';
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 3.3rem;
+            text-transform: uppercase;
+        }
+
+        & input[type="email"]{
+            flex: 1 1 auto;
+            border:none;
+        }
+    }
+
+    &__btn {
+        width: 16.7rem;
+        height: 4.3rem;
+    }
+}
+
+.rights__sign {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    opacity: .5;
+    font-family: 'Oswald';
+}
