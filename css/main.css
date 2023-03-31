@@ -1,0 +1,113 @@
+.header {
+  margin-top: 6rem;
+  padding: 8.7rem 0 9rem;
+  height: 62rem;
+}
+
+.sale {
+  background-color: #F1F1F1;
+  color: #333333;
+  text-align: center;
+  font-weight: 500;
+  padding: 8rem 0;
+}
+.sale__subtitle {
+  color: #333333;
+}
+.sale__title {
+  color: #333333;
+}
+.sale__products {
+  margin-top: 2.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.sale__product {
+  background-color: white;
+  padding: 3.2rem;
+  width: 17%;
+}
+
+.bestseller {
+  padding: 9rem 0;
+}
+.bestseller__img {
+  margin: -1.2rem 0;
+}
+
+.sale2 {
+  background-color: #F1F1F1;
+  padding: 9rem 0;
+}
+.sale2__card {
+  width: 48%;
+}
+
+.article {
+  background-image: url("../../img/rectangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.article * {
+  color: #fff;
+}
+.article__column {
+  width: 48%;
+  padding: 2.2rem 0 4rem;
+}
+.article .text-column__description {
+  width: 90%;
+}
+
+.sale3 {
+  padding: 9rem 0;
+}
+.sale3__bg {
+  background-color: #A04955;
+  height: 34rem;
+  padding-top: 3rem;
+  position: relative;
+}
+.sale3__title {
+  color: white;
+  text-align: center;
+}
+.sale3__products {
+  position: absolute;
+  bottom: -50%;
+  width: 86%;
+  display: flex;
+  justify-content: space-between;
+}
+.sale3__product {
+  width: 25%;
+  border: 1px solid #A04955;
+}
+.sale3__product img {
+  flex: 1 1 auto;
+  margin-bottom: 1rem;
+}
+.sale3__product .btn-red {
+  font-family: "Open sans";
+  margin-top: 1.5rem;
+  width: 22rem;
+  height: 4rem;
+  padding: 0 1rem;
+}
+
+.about__bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f3f3;
+  margin: 41.4rem 5.3rem 4.6rem;
+  padding: 13rem 4rem 4rem;
+  position: relative;
+}
+.about__mark {
+  position: absolute;
+  top: -15.5rem;
+}
+.about__description {
+  padding: 2rem 0 3.5rem;
+}

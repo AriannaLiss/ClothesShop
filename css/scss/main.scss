@@ -1,0 +1,139 @@
+$gray-bg: #F1F1F1;
+$red: #A04955;
+$cont-small-width: 86%;
+
+.header {
+    margin-top: 6rem;
+    padding: 8.7rem 0 9rem;
+    height:62rem;
+}
+
+.sale {
+    background-color: $gray-bg;
+    color:#333333;
+    text-align: center;
+    font-weight: 500;
+    padding: 8rem 0;
+
+		&__subtitle {
+            color:#333333;
+        }
+
+		&__title {
+            color:#333333;
+        }
+
+		&__products {
+            margin-top: 2.3rem;
+            display:flex;
+            justify-content: space-between;
+        }
+
+		&__product {
+            background-color: white;
+            padding: 3.2rem;
+            width: 17%;
+        }
+}
+
+.bestseller {
+    padding: 9rem 0;
+
+    &__img{
+        margin:-1.2rem 0;
+    }
+}
+
+.sale2 {
+    background-color: $gray-bg;
+    padding: 9rem 0;
+
+    &__card {
+        width: 48%;
+    }
+}
+
+.article {
+    background-image: url('../../img/rectangle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    & *{
+        color: #fff;
+    }
+
+    &__column {
+        width:48%;
+        padding: 2.2rem 0 4rem;
+    }
+
+    & .text-column__description {
+        width: 90%;
+    }
+}
+
+.sale3 {
+    padding: 9rem 0;
+
+    &__bg {
+        background-color: $red;
+        height: 34rem;
+        padding-top: 3rem;
+        position: relative;
+    }
+    
+    &__title {
+        color:white;
+        text-align: center;
+    }
+
+    &__products {
+        position: absolute;
+        bottom: -50%;
+        width: $cont-small-width;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__product {
+        width: 25%;
+        border: 1px solid $red;
+        // padding: 2.7rem 1.7rem 3.8rem;
+        // overflow: hidden;
+
+        & img{
+            flex: 1 1 auto;
+            margin-bottom: 1rem;
+        }
+
+        & .btn-red{
+            font-family: 'Open sans';
+            margin-top: 1.5rem;
+            width:22rem;
+            height: 4rem;
+            padding: 0 1rem;
+        }
+    }
+}
+
+.about {
+
+    &__bg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f3f3f3;
+        margin: 41.4rem 5.3rem 4.6rem;
+        padding: 13rem 4rem 4rem;
+        position: relative;
+    }
+
+    &__mark {
+        position: absolute;
+        top: -15.5rem;
+    }
+
+    &__description {
+        padding: 2rem 0 3.5rem;
+    }
+}

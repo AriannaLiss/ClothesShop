@@ -1,0 +1,59 @@
+.footer {
+  background-color: #A04955;
+}
+.footer__columns {
+  color: #fff;
+  font-family: "Oswald";
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.footer__column {
+  margin: 2.2rem;
+}
+.footer__column:hover {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2509803922);
+}
+.footer__column:first-child {
+  margin-left: 0;
+}
+.footer__column:last-child {
+  margin-right: 0;
+}
+.footer__title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+.footer__item {
+  color: #fff;
+  display: block;
+}
+.footer__form {
+  background-color: #fff;
+  padding: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.footer__form input {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.3rem;
+  text-transform: uppercase;
+}
+.footer__form input[type=email] {
+  flex: 1 1 auto;
+  border: none;
+}
+.footer__btn {
+  width: 16.7rem;
+  height: 4.3rem;
+}
+
+.rights__sign {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  opacity: 0.5;
+  font-family: "Oswald";
+}
