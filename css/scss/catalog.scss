@@ -79,7 +79,7 @@ $red: #A04955;
 	padding: 0 2.5rem;
 
 	&__section {
-		border-bottom: solid $red;
+		border-bottom: 1px solid $red;
 		padding: 2rem 0;
 		position: relative;
 	}
@@ -225,11 +225,6 @@ $red: #A04955;
 }
 
 	&__color-list {
-		// margin: 1.2rem 5rem 0;
-		// width: 70%; */
-		// margin-top: 1.2rem;
-		// display: grid;
-		// grid-template-columns: repeat(5, 1fr);
 		display: flex;
 		flex-wrap: wrap;
 		gap:.5rem;

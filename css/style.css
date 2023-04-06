@@ -231,6 +231,7 @@ ul, p {
 }
 .category-card__text {
   margin: 3.5rem 0 2.5rem;
+  flex: 1 0 auto;
 }
 .category-card__btn {
   width: 36.6rem;
