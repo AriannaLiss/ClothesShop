@@ -1,0 +1,155 @@
+html {
+  font-size: 8px;
+}
+
+.product__review {
+  display: flex;
+  justify-content: center;
+  align-items: streth;
+}
+.product__pictures {
+  display: flex;
+  flex-direction: column;
+}
+.product__picture-main {
+  flex: 1 0 auto;
+  width: 47rem;
+  height: 47 rem;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  overflow: hidden;
+  margin: 10rem;
+  overflow: hidden;
+}
+.product__previews {
+  display: flex;
+  justify-content: center;
+}
+.product__preview {
+  width: 14rem;
+  height: 14rem;
+  border: 1px solid #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2.5rem;
+  overflow: hidden;
+}
+.product__preview-active {
+  border: 2px solid #B93B54;
+}
+.product__img-small {
+  max-height: 80%;
+}
+.product__wrapper {
+  display: flex;
+  margin: 2rem 0;
+}
+.product__title {
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+.product__description {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.product__wrapper-title {
+  align-items: baseline;
+}
+.product__comment {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+.product__price {
+  font-size: 3.6rem;
+  font-weight: 600;
+  font-family: "Oswald";
+  margin: 1rem 0 2rem;
+  display: block;
+}
+.product__colors {
+  margin: 0.3rem 0 1rem;
+}
+.product__sizes {
+  display: flex;
+  margin: 1rem -0.75rem 2.5rem;
+}
+.product__sizes li {
+  width: 4.6rem;
+  height: 3.2rem;
+  border: 1px solid #c4c4c4;
+  margin: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product__wrapper-btns {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.product__btn {
+  width: 31.5rem;
+  height: 5.6rem;
+  background-color: #B93B54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.product__btn span {
+  padding-left: 5rem;
+  background-color: #B93B54;
+  margin: 0;
+  background-size: 3.3rem 3.3rem;
+  background-position: 0 0.4rem;
+  font-size: 2.4rem;
+}
+.product__wishlist-btn {
+  background-color: white;
+  border: 1px solid black;
+}
+.product__wishlist-btn span {
+  background-color: white;
+  color: #B93B54;
+  background-image: url("../img/icons/like.svg");
+}
+.product__wrapper-socials {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 2.5rem;
+}
+
+.shipping {
+  background-color: #fafafa;
+  padding: 1rem 5.5rem 2rem;
+}
+.shipping__title {
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-align: center;
+  border-bottom: 1px solid #B93B54;
+  margin: 0 7rem 1rem;
+  padding: 1rem;
+}
+.shipping__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery {
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+.delivery__img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 2.5rem;
+}
+.delivery__text {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}

@@ -177,6 +177,7 @@ ul, p {
   margin: 0.5rem 0.35rem;
   background-image: url("../../img/icons/star.svg");
   background-repeat: no-repeat;
+  background-size: 2.4rem;
 }
 .product-card__star-void {
   background-image: url("../../img/icons/grey-star.svg");
