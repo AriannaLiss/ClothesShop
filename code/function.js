@@ -1,3 +1,5 @@
+import { data } from "./data.js";
+
 export function ajax(url){
     return new Promise((reslove, reject) => {
         let xhr = new XMLHttpRequest();
@@ -27,4 +29,25 @@ export async function get(url){
     const data = await fetch(url);
     loader.classList.add('hide');
     return await data.json()
+}
+
+export function createSearchList(e){
+    const filteredData = data.filter(el => el.productName.toLowerCase().includes(e.target.value.toLowerCase()))
+    console.log(filteredData)
+    let dataList = document.querySelector('#filtered-list')
+    if (dataList){
+        dataList.innerHTML = '';
+    }else{
+        dataList = document.createElement('datalist')
+        dataList.id = "filtered-list"
+        document.querySelector('.nav__search').appendChild(dataList);
+        getSearches().forEach(el => el.setAttribute('list',dataList.id));
+    }
+    filteredData.forEach(el => {
+        dataList.innerHTML +=  `<option value="${el.productName}">`
+    });
+}
+
+export function getSearches(){
+    return document.querySelectorAll('[data-purpose = "search"]');
 }

@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sportif catalog</title>
+    <link rel="stylesheet" href="./css/loader.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/catalog.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <script src="./code/catalog.js" type="module"></script>
 </head>
 <body>
 
@@ -30,7 +32,7 @@
                         <li class="nav__item"><a href="./#sale">sale</a></li>
                     </ul>
                     <div class="nav__search">
-                        <input class="search" type="text" id="main__search" placeholder="search entire store here">
+                        <input class="search" type="text" data-purpose="search" placeholder="search entire store here">
                     </div>
                 </div>
             </div>
@@ -43,9 +45,7 @@
                 <a href="/#" class="breadcrumbs__home">home</a>
                 <a href="#" class="breadcrumbs__next-page">shorts</a>
             </div>
-            <div class="catalog__search title">
-                search
-            </div>
+            <input class="catalog__search title" data-purpose="search" placeholder="search"/>
         </div>
     </header>
 
@@ -419,5 +419,6 @@
             <p class="rights__sign">©2021 Sportif Mailorder. All Rights Reserved.</p>
         </div>
     </div>
+    <div class="loader hide"><div class="lds-ripple"><div></div><div></div></div></div>
 </body>
 </html>

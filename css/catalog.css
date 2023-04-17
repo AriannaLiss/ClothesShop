@@ -20,7 +20,18 @@
   align-self: center;
 }
 .catalog__search {
-  border-bottom: solid;
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 2px solid #c4c4c4;
+  color: #8d8d8d;
+}
+.catalog__search::-moz-placeholder {
+  color: #c4c4c4;
+}
+.catalog__search:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+.catalog__search::placeholder {
   color: #c4c4c4;
 }
 .catalog__sidebar {
